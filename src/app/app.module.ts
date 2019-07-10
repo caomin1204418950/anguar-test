@@ -1,16 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 
+import { AppRoutingModule } from './app-routing.module';
+import { FirstPageComponent } from './pages/first-page/first-page.component';
+
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    CommonModule,
+    AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+      AppComponent
+  ],
+  declarations: [FirstPageComponent]
 })
 export class AppModule { }
